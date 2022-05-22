@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment_form.css">
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1 class="main_heading">Payment form</h1>
+            <hr>
+            <h2>User information</h2>
+            <p>Name:* <input type="text"required name="name" placeholder="Enter your name"></p>
+            <fieldset>
+                <legend>Gender*</legend>
+                <p>
+                    Male <input type="radio" name="gender" id="gender" >Female <input type="radio" name="gender" id="Female">
+                required</p>
+            </fieldset>  
+            <p>Address: <textarea  required name="Address" id="address" cols="70" rows="10" placeholder="Enter your address"></textarea></p> 
+            <p>Gmail:* <input type="Gmail" required name="Gmail" id="Gmail" placeholder="Enter your Gmail"></p> 
+            <P>Pincode: *<input type="number" required name="pincode" id="pincode" placeholder="00000"></P>
+            <hr>
+            <h2>Payment mathod</h2>
+            <p>Card Type: *
+                <select name="card-type" id="card type">required
+                    <option value="">--Select a Card type--</option>
+                    <option value="visa">Visa</option>
+                    <option value="rupay">Rupay</option>
+                    <option value="master">Master card</option>
+                </select> 
+            </p>
+            <p>
+                Card Number *<input type="card_number" name="card" id="card_number" placeholder="0000-0000-0000">
+            </p>
+            <p>
+                expiration Date *<input type="date" name="exp_date" id="exp_date0">required
+            </p>
+            <p>CVV *<input type="password" required name="CVV" placeholder="000"></p>
+            <input type="submit" value="Pay Now">
+        </form>
+    </div>
+</body>
+</html>
